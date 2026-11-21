@@ -1,0 +1,31 @@
+/* Mirabilia: paleta "Papelería escolar". Todo plano, como papel: sin degradados ni brillos. */
+:root {
+  --mesa: #ECE6D6; --tinta: #2B3347; --rojo: #D9503F; --amarillo: #F0B93B; --verde: #3C8D71; --azul: #3D6DB3;
+  --hoja: #F7F3E8;
+}
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--mesa); color: var(--tinta); font-family: "IBM Plex Sans", sans-serif; font-size: 18px; line-height: 1.55; }
+main { max-width: 760px; margin: 0 auto; padding: 40px 16px 56px; }
+header { text-align: center; }
+header img { border-radius: 50%; }
+h1 { font-size: 44px; letter-spacing: 0.08em; text-transform: uppercase; margin: 12px 0 0; }
+.lema { display: inline-block; margin: 10px 0 0; padding: 4px 16px; background: var(--rojo); color: #fff; font-weight: 600; transform: rotate(-1deg); }
+.que { margin: 32px 0; text-align: center; }
+h2 { font-size: 20px; margin: 0 0 4px; }
+.idiomas { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 16px; }
+.tira { background: var(--hoja); padding: 16px 18px; border-left: 14px solid var(--tinta); box-shadow: 3px 4px 0 rgba(43, 51, 71, 0.18); }
+.tira p { margin: 0 0 8px; }
+.amarillo { border-color: var(--amarillo); } .azul { border-color: var(--azul); }
+.verde { border-color: var(--verde); } .rojo { border-color: var(--rojo); }
+.redes a { display: inline-block; margin: 4px 14px 0 0; padding: 6px 0; font-weight: 600; }
+a { color: var(--tinta); text-decoration-thickness: 2px; text-underline-offset: 3px; }
+a:hover, a:focus-visible { color: var(--azul); }
+a:focus-visible { outline: 3px solid var(--azul); outline-offset: 3px; }
+.notas { margin-top: 40px; }
+.notas h2 { margin-top: 24px; }
+footer { margin-top: 40px; padding-top: 16px; border-top: 3px dashed var(--tinta); font-size: 16px; }
+footer p { margin: 4px 0; }
+.legal h1 { font-size: 30px; letter-spacing: 0; text-transform: none; text-align: left; }
+.legal h2 { margin-top: 28px; }
+.legal .fecha { font-size: 16px; }
+@media (max-width: 480px) { h1 { font-size: 34px; } body { font-size: 17px; } }
